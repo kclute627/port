@@ -1,0 +1,23 @@
+.intrests {
+  grid-row: 3/4;
+  grid-column: 2/3;
+  z-index: 4343;
+
+  & h2 {
+    font-size: 6rem;
+    color: rgb(245, 245, 245);
+ 
+    margin-left: 5rem;
+    position: relative;
+   
+    
+  }
+}
+.block{
+    height: 1rem;
+    width: 10rem;
+    background-color: rgba(3, 3, 81, 0.753);
+    position: absolute;
+    bottom: .51rem;
+    left: 0;
+}
