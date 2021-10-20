@@ -8,8 +8,10 @@ const Home = () => {
     <div className="home">
       <Left />
       <div className="home-right" id="left">
-        <Projects />
-        <Intrests />
+        <Projects title="Websites" />
+        <Projects title="Mobile Apps" />
+        <Projects title="Current Intrests" />
+       
       </div>
       <div className="home-background" id="background"></div>
     </div>

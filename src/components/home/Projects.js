@@ -1,11 +1,11 @@
 import React from "react";
 import { projectData } from "../../utils/projectData";
 
-const Projects = () => {
+const Projects = ({title}) => {
   return (
     <div className="projects">
       <h2>
-        Projects <span className="block"></span>
+        {title} <span className="block"></span>
       </h2>
       <div className="projects_container">
         {projectData.map((cur) => {
