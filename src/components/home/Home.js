@@ -1,6 +1,5 @@
 import React from "react";
 import Left from "./Left";
-
 import Projects from "./Projects";
 
 const Home = () => {
@@ -10,11 +9,13 @@ const Home = () => {
       <div className="home-right" id="left">
         <Projects title="Websites" />
         <Projects title="Mobile Apps" />
-        <Projects title="Current Intrests" />
+        
+        {/* 
+        <Projects title="Current Intrests" /> */}
        
       </div>
       <div className="home-background" id="background"></div>
-    </div>
+    </div> 
   );
 };
 
