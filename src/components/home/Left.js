@@ -12,7 +12,7 @@ const Left = () => {
       <img src={pic} alt="" className="home-left-img" />
       <div className="home-left-text">
         <h4>Kyle Clutter</h4>
-        <h6>Full-Stack Web Developer</h6>
+        <h6>React Developer</h6>
         <div className="social_box">
           <a href="https://github.com/kclute627/" target="_blank">
             <SVG title=" " src={github} className="social_icon" />

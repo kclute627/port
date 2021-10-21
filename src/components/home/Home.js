@@ -1,6 +1,6 @@
 import React from "react";
 import Left from "./Left";
-import Intrests from "./Intrests";
+
 import Projects from "./Projects";
 
 const Home = () => {
