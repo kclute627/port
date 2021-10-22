@@ -50,7 +50,7 @@ const Projects = ({ title }: any) => {
             LeftArrow={LeftArrow}
             RightArrow={RightArrow}
           >
-            {boxes.map(({ id }) => {
+            {projectData.map(({ id, img }) => {
               return (
                 <Card
                   title={id}
@@ -58,6 +58,7 @@ const Projects = ({ title }: any) => {
                   key={id}
                   onClick={handleItemClick(id)}
                   selected={id === selected}
+                  img={img}
                 />
               );
             })}

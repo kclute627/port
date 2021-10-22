@@ -7,11 +7,13 @@ export function Card({
   selected,
   onClick,
   title,
+  img
 }: {
   itemId: string;
   selected: boolean;
   onClick: Function;
   title: string;
+  img: string
 }) {
   const visibility = React.useContext(VisibilityContext);
 
@@ -22,28 +24,18 @@ export function Card({
       onClick={() => onClick()}
       role="button"
       style={{
-        border: "1px solid",
+        
         display: "inline-block",
         margin: "0 10px",
-        width: "160px",
+        width: "60rem",
         userSelect: "none",
       }}
       tabIndex={0}
       className="card"
     >
-      <div>
-        <div>{title}</div>
-        <div style={{ backgroundColor: visible ? "transparent" : "gray" }}>
-          visible: {JSON.stringify(visible)}
-        </div>
-        <div>selected: {JSON.stringify(!!selected)}</div>
-      </div>
-      <div
-        style={{
-          backgroundColor: selected ? "green" : "bisque",
-          height: "200px",
-        }}
-      />
+      <img src={img} alt="website" className="projects_box-image" />
+      
+       
     </div>
   );
 }
