@@ -1,4 +1,5 @@
 import React from "react";
+
 import { ScrollMenu, VisibilityContext } from "react-horizontal-scrolling-menu";
 import { projectData } from "../../utils/projectData";
 import { Card } from "./Card";
@@ -50,7 +51,7 @@ const Projects = ({ title }: any) => {
             LeftArrow={LeftArrow}
             RightArrow={RightArrow}
           >
-            {projectData.map(({ id, img }) => {
+            {projectData.map(({ id, img, name }) => {
               return (
                 <Card
                   title={id}
@@ -59,6 +60,7 @@ const Projects = ({ title }: any) => {
                   onClick={handleItemClick(id)}
                   selected={id === selected}
                   img={img}
+                  name={name}
                 />
               );
             })}

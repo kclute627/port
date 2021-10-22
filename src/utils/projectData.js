@@ -8,6 +8,7 @@ import sbw from '../assets/projects/sbWebsites-min.png'
 export const projectData = [
   {
     title: "Nationwide Investigations",
+    name: 'nationwideinvestigations',
     website: "https://www.nationwide-investigations.com/",
     description:
       "I built a fully responsive website wising the latest React framework",
@@ -17,6 +18,7 @@ export const projectData = [
   {
     title: "Nationwide Investigations",
     website: "https://www.nwbs-inc.com/",
+    name: 'nwbs',
     description:
       "I built a fully responsive website wising the latest React framework",
     img: nwbs,
@@ -25,6 +27,7 @@ export const projectData = [
   {
     title: "Nationwide Investigations",
     website: "https://www.nwbs-inc.com/",
+    name: 'pg',
     description:
       "I built a fully responsive website wising the latest React framework",
     img: pg,
@@ -33,6 +36,7 @@ export const projectData = [
   {
     title: "Nationwide Investigations",
     website: "https://www.nwbs-inc.com/",
+    name: 'rs',
     description:
       "I built a fully responsive website wising the latest React framework",
     img: rs,
@@ -41,6 +45,7 @@ export const projectData = [
   {
     title: "Nationwide Investigations",
     website: "https://www.nwbs-inc.com/",
+    name: 'sbw',
     description:
       "I built a fully responsive website wising the latest React framework",
     img: sbw,

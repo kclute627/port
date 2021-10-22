@@ -1,5 +1,5 @@
 import React from "react";
-
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import { VisibilityContext } from "react-horizontal-scrolling-menu";
 
 export function Card({
@@ -7,20 +7,22 @@ export function Card({
   selected,
   onClick,
   title,
-  img
+  img,
+  name
 }: {
   itemId: string;
   selected: boolean;
   onClick: Function;
   title: string;
-  img: string
+  img: string,
+  name: string
 }) {
   const visibility = React.useContext(VisibilityContext);
 
   const visible = visibility.isItemVisible(itemId);
 
   return (
-    <div
+    <Link
       onClick={() => onClick()}
       role="button"
       style={{
@@ -32,10 +34,12 @@ export function Card({
       }}
       tabIndex={0}
       className="card"
+      to={`/projects/${name}`}
+      
     >
       <img src={img} alt="website" className="projects_box-image" />
       
        
-    </div>
+    </Link>
   );
 }
