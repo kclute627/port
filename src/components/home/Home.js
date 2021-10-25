@@ -7,8 +7,8 @@ const Home = () => {
     <div className="home">
       <Left />
       <div className="home-right" id="left">
-        <Projects title="Websites" />
-        <Projects title="Mobile Apps" />
+        <Projects title="Websites" type='website' />
+        <Projects title="Mobile Apps" type='app' />
         
         {/* 
         <Projects title="Current Intrests" /> */}

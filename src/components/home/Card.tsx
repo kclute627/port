@@ -8,18 +8,29 @@ export function Card({
   onClick,
   title,
   img,
-  name
+  name,
+  type
 }: {
   itemId: string;
   selected: boolean;
   onClick: Function;
   title: string;
   img: string,
-  name: string
+  name: string,
+  type: string,
 }) {
   const visibility = React.useContext(VisibilityContext);
 
   const visible = visibility.isItemVisible(itemId);
+
+  const appStyle= {
+    height: '40rem',
+    width: '25rem'
+  }
+  const websiteStyle = {
+    height: "100%",
+    width: "100%",
+  };
 
   return (
     <Link
@@ -37,7 +48,7 @@ export function Card({
       to={`/projects/${name}`}
       
     >
-      <img src={img} alt="website" className="projects_box-image" />
+      <img src={img} alt="website" className="projects_box-image"  style={type == 'app' ? appStyle : websiteStyle}/>
       
        
     </Link>

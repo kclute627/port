@@ -15,7 +15,7 @@ const getItems = () =>
     .map((_, ind) => ({ id: getId(ind) }));
 
 
-const Projects = ({ title }: any) => {
+const Projects = ({ title, type }: any) => {
   const { dragStart, dragStop, dragMove, dragging } = useDrag();
 
   const handleDrag =
@@ -51,7 +51,7 @@ const Projects = ({ title }: any) => {
             LeftArrow={LeftArrow}
             RightArrow={RightArrow}
           >
-            {projectData.map(({ id, img, name }) => {
+            {projectData.filter(cur=> cur.type === type).map(({ id, img, name, type }) => {
               return (
                 <Card
                   title={id}
@@ -61,6 +61,7 @@ const Projects = ({ title }: any) => {
                   selected={id === selected}
                   img={img}
                   name={name}
+                  type={type}
                 />
               );
             })}

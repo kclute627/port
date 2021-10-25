@@ -17,12 +17,12 @@
     margin-bottom: 4rem;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    // justify-content: space-around;
   }
 
   &_box {
-    width: 75rem;
-    height: 25rem;
+    height: 100%;
+    width: 100%;
 
     box-shadow: -6px 8px 9px 6px rgba(0, 0, 0, 0.43);
     background-color: black;
@@ -31,7 +31,7 @@
     &-image {
       height: 100%;
       width: 100%;
-      
+
       -webkit-user-drag: none;
       user-select: none;
       -moz-user-select: none;

@@ -21,14 +21,12 @@ const Left = () => {
             <SVG title=" " src={codeWars} className="social_icon" />
           </a>
           <a href="https://twitter.com/kyclutter" target="_blank">
-            {" "}
             <SVG title=" " src={twitter} className="social_icon" />
           </a>
           <a
             href="https://www.linkedin.com/in/kyle-clutter-b37a52216/"
             target="_blank"
           >
-            
             <SVG title=" " src={link} className="social_icon" />
           </a>
         </div>
