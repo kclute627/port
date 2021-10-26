@@ -9,24 +9,24 @@ export function Card({
   title,
   img,
   name,
-  type
+  type,
 }: {
   itemId: string;
   selected: boolean;
   onClick: Function;
   title: string;
-  img: string,
-  name: string,
-  type: string,
+  img: string;
+  name: string;
+  type: string;
 }) {
   const visibility = React.useContext(VisibilityContext);
 
   const visible = visibility.isItemVisible(itemId);
 
-  const appStyle= {
-    height: '40rem',
-    width: '25rem'
-  }
+  const appStyle = {
+    height: "40rem",
+    width: "25rem",
+  };
   const websiteStyle = {
     height: "100%",
     width: "100%",
@@ -36,21 +36,34 @@ export function Card({
     <Link
       onClick={() => onClick()}
       role="button"
-      style={{
-        
-        display: "inline-block",
-        margin: "0 10px",
-        width: "60rem",
-        userSelect: "none",
-      }}
+      style={
+        type == "app"
+          ? {
+              display: "inline-block",
+              margin: "0 10px",
+              width: "40rem",
+              userSelect: "none",
+            }
+          : {
+              display: "inline-block",
+              margin: "0 10px",
+              width: "60rem",
+              userSelect: "none",
+            }
+      }
       tabIndex={0}
       className="card"
       to={`/projects/${name}`}
-      
     >
-      <img src={img} alt="website" className="projects_box-image"  style={type == 'app' ? appStyle : websiteStyle}/>
-      
-       
+      <img
+        src={img}
+        alt="website"
+        className={
+          type == "app"
+            ? "appStyle projects_box-image"
+            : "websiteStyle projects_box-image"
+        }
+      />
     </Link>
   );
 }

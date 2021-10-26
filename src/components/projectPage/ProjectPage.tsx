@@ -1,3 +1,4 @@
+import {useEffect} from 'react'
 import { Link, useParams } from "react-router-dom";
 import {
   SiReact,
@@ -15,10 +16,17 @@ import { BsChevronLeft } from "react-icons/bs";
 import { projectData } from "../../utils/projectData";
 
 function ProjectPage() {
+
+useEffect(()=>{
+  window.scrollTo(0,0)
+})
+
+
+
   let { id }: any = useParams();
   const project = projectData.filter((cur) => cur.name === id);
   console.log(project);
-  const { title, name, img, website, description, tools } = project[0];
+  const { title, name, img, website, description, tools, type } = project[0];
   return (
     <div className="projectPage">
       <div className="projectPage-header-1">
@@ -63,7 +71,7 @@ function ProjectPage() {
             )}
           </div>
         </div>
-        <img src={img}  />
+        <img src={img} className={type=='app' ? 'appPic': 'websitePic'} />
       </div>
 
       <div className="filler"></div>

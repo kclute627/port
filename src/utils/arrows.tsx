@@ -15,19 +15,9 @@ function Arrow({
 
   const leftStyle: any = {
     opacity: disabled ? "0" : "1",
-    position: "absolute",
-    cursor: "pointer",
-    left: "35%",
-    bottom: "-11rem",
   };
   const rightStyle: any = {
     opacity: disabled ? "0" : "1",
-    position: "absolute",
-    cursor: "pointer",
-    right: "35%",
-   
-
-    bottom: "-11rem",
   };
 
   if (children == "Right") {
@@ -35,8 +25,8 @@ function Arrow({
       <button
         disabled={disabled}
         onClick={onClick}
+        className="rightStyle btn"
         style={rightStyle}
-        className="btn"
       >
         <BsChevronDoubleRight size={100} color="white" />
       </button>
@@ -46,8 +36,8 @@ function Arrow({
       <button
         disabled={disabled}
         onClick={onClick}
+        className="leftStyle btn"
         style={leftStyle}
-        className="btn"
       >
         <BsChevronDoubleLeft size={100} color="white" />
       </button>

@@ -5,6 +5,9 @@ import pg from "../assets/projects/pg-min 2.png";
 import rs from "../assets/projects/rs-min.png";
 import sbw from "../assets/projects/sbWebsites-min.png";
 import gps from "../assets/projects/gpsPhoto.png";
+import color from '../assets/projects/coloe.png'
+import tic from '../assets/projects/tic.png';
+import bottle from '../assets/projects/bottle.png';
 
 export const projectData = [
   {
@@ -76,36 +79,37 @@ export const projectData = [
     tools: ["scss", "javascript", "react", "aws"],
   },
   {
-    title: "GPS Photo",
+    title: "Tic Tac Toe",
     website: "exp://exp.host/@kclutte627/GPSPhoto",
     type: "app",
-    name: "gps",
+    name: "tic",
     description:
       " As a process server I needed a mobile app that would allow me to take a photo with the date, time and GPS coordinates shown on the photo. I used react Native and Expo to create the app. The user can take a photo that has the date, time and gps information on the photo. I really enjoyed solving a real problem that I had in the field. This app solved a problem I had and I look forward to adding on to it. ",
-    img: gps,
+    img: tic,
+    id: "9",
+    tools: ["mobile", "javascript", "react", "aws"],
+  },
+  {
+    title: "Bottle Shop",
+    website: "exp://exp.host/@kclutte627/GPSPhoto",
+    type: "app",
+    name: "bottle",
+    description:
+      " As a process server I needed a mobile app that would allow me to take a photo with the date, time and GPS coordinates shown on the photo. I used react Native and Expo to create the app. The user can take a photo that has the date, time and gps information on the photo. I really enjoyed solving a real problem that I had in the field. This app solved a problem I had and I look forward to adding on to it. ",
+    img: bottle,
     id: "6",
-    tools: ["scss", "javascript", "react", "aws"],
+    tools: ["mobile", "javascript", "react", "aws"],
   },
   {
-    title: "GPS Photo",
+    title: "Color Palate",
     website: "exp://exp.host/@kclutte627/GPSPhoto",
     type: "app",
-    name: "gps",
+    name: "color",
     description:
       " As a process server I needed a mobile app that would allow me to take a photo with the date, time and GPS coordinates shown on the photo. I used react Native and Expo to create the app. The user can take a photo that has the date, time and gps information on the photo. I really enjoyed solving a real problem that I had in the field. This app solved a problem I had and I look forward to adding on to it. ",
-    img: gps,
+    img: color,
     id: "7",
-    tools: ["scss", "javascript", "react", "aws"],
+    tools: ["mobile", "javascript", "react", "aws"],
   },
-  {
-    title: "GPS Photo",
-    website: "exp://exp.host/@kclutte627/GPSPhoto",
-    type: "app",
-    name: "gps",
-    description:
-      " As a process server I needed a mobile app that would allow me to take a photo with the date, time and GPS coordinates shown on the photo. I used react Native and Expo to create the app. The user can take a photo that has the date, time and gps information on the photo. I really enjoyed solving a real problem that I had in the field. This app solved a problem I had and I look forward to adding on to it. ",
-    img: gps,
-    id: "8",
-    tools: ["scss", "javascript", "react", "aws"],
-  },
+  
 ];

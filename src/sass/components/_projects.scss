@@ -81,3 +81,27 @@
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
 }
+
+.rightStyle {
+  position: absolute;
+  cursor: pointer;
+  right: 35%;
+
+  bottom: -11rem;
+
+  @media (max-width: 1503px) {
+    right: 70%;
+  }
+}
+.leftStyle {
+  position: absolute;
+  cursor: pointer;
+  left: 35%;
+   bottom: -11rem;
+
+  @media (max-width: 1503px) {
+    left: 5%;
+    
+  }
+  
+}
