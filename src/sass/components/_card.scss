@@ -77,14 +77,18 @@
   @media (max-width: 545px) {
     width: 52rem;
   }
-  @media (max-width: 450px) {
+  @media (max-width: 480px) {
     width: 40rem;
   }
   @media (max-width: 420px) {
-    width: 30rem;
+    width: 36rem;
+   
   }
   @media (max-width: 376px) {
     width: 30rem;
+  }
+  @media (max-width: 300px) {
+    width: 20rem;
   }
 }
 .left {

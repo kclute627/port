@@ -97,6 +97,11 @@
       height: 15rem;
       width: 15rem;
       margin-right: 5rem;
+
+      @media (max-width: 450px) {
+     height: 10rem;
+      width: 10rem;
+  }
     }
   }
   &-header {
