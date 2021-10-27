@@ -7,12 +7,8 @@ import useDrag from "../../utils/useDrag";
 import { LeftArrow, RightArrow } from "../../utils/arrows";
 type scrollVisibilityApiType = React.ContextType<typeof VisibilityContext>;
 
-const elemPrefix = "test";
-const getId = (index: number) => `${elemPrefix}${index}`;
-const getItems = () =>
-  Array(20)
-    .fill(0)
-    .map((_, ind) => ({ id: getId(ind) }));
+
+
 
 
 const Projects = ({ title, type }: any) => {
@@ -34,7 +30,7 @@ const Projects = ({ title, type }: any) => {
     }
     setSelected(selected !== itemId ? itemId : "");
   };
-  const [boxes] = React.useState(getItems);
+  
 
   return (
     <div className="projects">

@@ -3,7 +3,7 @@ import ReactDOM from "react-dom";
 import "./sass/main.scss";
 import Home from './components/home/Home'
 import ProjectPage from "./components/projectPage/ProjectPage";
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Route } from "react-router-dom";
 import reportWebVitals from "./reportWebVitals";
 
 const routing = (

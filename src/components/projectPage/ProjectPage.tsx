@@ -1,13 +1,11 @@
-import {useEffect} from 'react'
+import { useEffect } from "react";
 import { Link, useParams } from "react-router-dom";
 import {
   SiReact,
-  SiCsswizardry,
   SiTypescript,
   SiAmazonaws,
   SiTwitter,
   SiMedium,
-  SiCodewars,
 } from "react-icons/si";
 import { AiOutlineMobile, AiFillGithub, AiOutlineMail } from "react-icons/ai";
 import { DiJavascript1 } from "react-icons/di";
@@ -16,17 +14,14 @@ import { BsChevronLeft } from "react-icons/bs";
 import { projectData } from "../../utils/projectData";
 
 function ProjectPage() {
-
-useEffect(()=>{
-  window.scrollTo(0,0)
-})
-
-
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  });
 
   let { id }: any = useParams();
   const project = projectData.filter((cur) => cur.name === id);
   console.log(project);
-  const { title, name, img, website, description, tools, type } = project[0];
+  const { title, img, website, description, tools, type } = project[0];
   return (
     <div className="projectPage">
       <div className="projectPage-header-1">
@@ -71,27 +66,23 @@ useEffect(()=>{
             )}
           </div>
         </div>
-       
       </div>
- <img src={img} className={type=='app' ? 'appPic': 'websitePic'} />
+      <img src={img} className={type === "app" ? "appPic" : "websitePic"} alt='cool'/>
       <div className="filler"></div>
       <div className=""></div>
       <div className="projectPage-footer">
-        
-          <a href="mailto:kyclutter@gmail.com" style={{ color: "white" }}>
-            <AiOutlineMail height={100} width={100} />
-          </a>
-          <a href="https://twitter.com/kyclutter" target="_blank">
-            <SiTwitter color="white" />
-          </a>
-          <a href="https://github.com/kclute627/" target="_blank">
-            <AiFillGithub color="white" />
-          </a>
-          <a href="https://kyleclutter.medium.com/" target="_blank">
-            <SiMedium color="white" />
-          </a>
-          
-        
+        <a href="mailto:kyclutter@gmail.com" style={{ color: "white" }}>
+          <AiOutlineMail height={100} width={100} />
+        </a>
+        <a href="https://twitter.com/kyclutter" target="blank">
+          <SiTwitter color="white" />
+        </a>
+        <a href="https://github.com/kclute627/" target="blank">
+          <AiFillGithub color="white" />
+        </a>
+        <a href="https://kyleclutter.medium.com/" target="blank">
+          <SiMedium color="white" />
+        </a>
       </div>
     </div>
   );

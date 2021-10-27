@@ -20,7 +20,7 @@ function Arrow({
     opacity: disabled ? "0" : "1",
   };
 
-  if (children == "Right") {
+  if (children === "Right") {
     return (
       <button
         disabled={disabled}

@@ -30,18 +30,18 @@ const Left = () => {
         <h4>Kyle Clutter</h4>
         <h6>React Developer</h6>
         <div className="social_box">
-          <a href="https://github.com/kclute627/" target="_blank">
+          <a href="https://github.com/kclute627/" target="blank">
             <SVG title=" " src={github} className="social_icon" />
           </a>
-          <a href="https://www.codewars.com/users/kclute627" target="_blank">
+          <a href="https://www.codewars.com/users/kclute627" target="blank">
             <SVG title=" " src={codeWars} className="social_icon" />
           </a>
-          <a href="https://twitter.com/kyclutter" target="_blank">
+          <a href="https://twitter.com/kyclutter" target="blank">
             <SVG title=" " src={twitter} className="social_icon" />
           </a>
           <a
             href="https://www.linkedin.com/in/kyle-clutter-b37a52216/"
-            target="_blank"
+            target="blank"
           >
             <SVG title=" " src={link} className="social_icon" />
           </a>

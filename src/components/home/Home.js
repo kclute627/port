@@ -1,7 +1,7 @@
 import React from "react";
 import Left from "./Left";
 import Projects from "./Projects";
-import Footer from "../Footer";
+
 
 const Home = () => {
   return (
