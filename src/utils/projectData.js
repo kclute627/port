@@ -80,11 +80,11 @@ export const projectData = [
   },
   {
     title: "Tic Tac Toe",
-    website: "exp://exp.host/@kclutte627/GPSPhoto",
+    website: "https://snack.expo.dev/@kclutte627/8cfd9c",
     type: "app",
     name: "tic",
     description:
-      " As a process server I needed a mobile app that would allow me to take a photo with the date, time and GPS coordinates shown on the photo. I used react Native and Expo to create the app. The user can take a photo that has the date, time and gps information on the photo. I really enjoyed solving a real problem that I had in the field. This app solved a problem I had and I look forward to adding on to it. ",
+      " I built a simple tic tac toe app that has multiplayer and single player options. I built the app using expo and react native. I used AWS amplify for handling the back end. Over all I am happy with the way it turned out.  ",
     img: tic,
     id: "9",
     tools: ["mobile", "typescript", "react", "aws"],
@@ -106,10 +106,9 @@ export const projectData = [
     type: "app",
     name: "color",
     description:
-      " As a process server I needed a mobile app that would allow me to take a photo with the date, time and GPS coordinates shown on the photo. I used react Native and Expo to create the app. The user can take a photo that has the date, time and gps information on the photo. I really enjoyed solving a real problem that I had in the field. This app solved a problem I had and I look forward to adding on to it. ",
+      " I built a simple react native app that displays a color palette that allows the user to pick colors and create a custom color palette. I used expo in addition to react native. This was a simple project to get a better understanding of the react native ecosystem.  ",
     img: color,
     id: "7",
     tools: ["mobile", "javascript", "react", "aws"],
   },
-  
 ];
