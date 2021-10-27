@@ -71,13 +71,13 @@ useEffect(()=>{
             )}
           </div>
         </div>
-        <img src={img} className={type=='app' ? 'appPic': 'websitePic'} />
+       
       </div>
-
+ <img src={img} className={type=='app' ? 'appPic': 'websitePic'} />
       <div className="filler"></div>
       <div className=""></div>
       <div className="projectPage-footer">
-        <div className="projectPage-footer-center">
+        
           <a href="mailto:kyclutter@gmail.com" style={{ color: "white" }}>
             <AiOutlineMail height={100} width={100} />
           </a>
@@ -90,10 +90,8 @@ useEffect(()=>{
           <a href="https://kyleclutter.medium.com/" target="_blank">
             <SiMedium color="white" />
           </a>
-          <a href="https://www.codewars.com/users/kclute627" target="_blank">
-            <SiCodewars color="white" />
-          </a>
-        </div>
+          
+        
       </div>
     </div>
   );

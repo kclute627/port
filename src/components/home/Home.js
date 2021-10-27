@@ -16,7 +16,7 @@ const Home = () => {
        
       </div>
       <div className="home-background" id="background"></div>
-      <Footer />
+ 
     </div> 
   );
 };
