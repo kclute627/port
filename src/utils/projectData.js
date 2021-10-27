@@ -1,5 +1,5 @@
-import ni from "../assets/projects/ni.png";
-import nwbs from "../assets/projects/nwbs.png";
+import ni from "../assets/projects/ni-min.png";
+import nwbs from "../assets/projects/nwbs-min.png";
 
 import pg from "../assets/projects/pg-min 2.png";
 import rs from "../assets/projects/rs-min.png";
