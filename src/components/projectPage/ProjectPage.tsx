@@ -62,7 +62,7 @@ function ProjectPage() {
               <SiAmazonaws className="aws" color="rgb(255, 153, 0)" />
             )}
             {tools?.includes("mobile") && (
-              <AiOutlineMobile className="mobile" color="gb(15, 157, 88)" />
+              <AiOutlineMobile className="mobile" color="rgb(15, 157, 88)" />
             )}
           </div>
         </div>

@@ -87,7 +87,7 @@ export const projectData = [
       " As a process server I needed a mobile app that would allow me to take a photo with the date, time and GPS coordinates shown on the photo. I used react Native and Expo to create the app. The user can take a photo that has the date, time and gps information on the photo. I really enjoyed solving a real problem that I had in the field. This app solved a problem I had and I look forward to adding on to it. ",
     img: tic,
     id: "9",
-    tools: ["mobile", "javascript", "react", "aws"],
+    tools: ["mobile", "typescript", "react", "aws"],
   },
   {
     title: "Bottle Shop",
@@ -98,7 +98,7 @@ export const projectData = [
       " As a process server I needed a mobile app that would allow me to take a photo with the date, time and GPS coordinates shown on the photo. I used react Native and Expo to create the app. The user can take a photo that has the date, time and gps information on the photo. I really enjoyed solving a real problem that I had in the field. This app solved a problem I had and I look forward to adding on to it. ",
     img: bottle,
     id: "6",
-    tools: ["mobile", "javascript", "react", "aws"],
+    tools: ["mobile", "typescript", "react", "aws"],
   },
   {
     title: "Color Palate",
