@@ -23,36 +23,18 @@ export function Card({
 
   const visible = visibility.isItemVisible(itemId);
 
-  const appStyle = {
-    height: "40rem",
-    width: "25rem",
-  };
-  const websiteStyle = {
-    height: "100%",
-    width: "100%",
-  };
 
   return (
     <Link
       onClick={() => onClick()}
       role="button"
-      style={
+      className={
         type == "app"
-          ? {
-              display: "inline-block",
-              margin: "0 10px",
-              width: "40rem",
-              userSelect: "none",
-            }
-          : {
-              display: "inline-block",
-              margin: "0 10px",
-              width: "60rem",
-              userSelect: "none",
-            }
+          ? 'appLink card'
+          : 'websiteLink card'
       }
       tabIndex={0}
-      className="card"
+      
       to={`/projects/${name}`}
     >
       <img

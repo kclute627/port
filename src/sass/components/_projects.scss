@@ -5,11 +5,33 @@
   margin-top: 1rem;
   margin-left: 5rem;
 
+  @media (max-width: 958px) {
+    margin-left: 3rem;
+  }
+
+  @media (max-width: 700px) {
+    margin-top: .1rem;
+
+
+    
+  }
+  @media (max-width: 530px) {
+    margin-bottom: -10rem;
+
+
+    
+  }
+
   & h2 {
     font-size: 6rem;
     color: rgb(255, 255, 255);
 
     position: relative;
+    
+    @media(max-width: 450px){
+      margin-top: -1rem;
+      font-size: 5rem;
+    }
   }
   &_container {
     width: 100%;
@@ -37,6 +59,8 @@
       -moz-user-select: none;
       -webkit-user-select: none;
       -ms-user-select: none;
+
+      
     }
     &-link {
       position: absolute;
@@ -80,28 +104,4 @@
 .react-horizontal-scrolling-menu--scroll-container {
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
-}
-
-.rightStyle {
-  position: absolute;
-  cursor: pointer;
-  right: 35%;
-
-  bottom: -11rem;
-
-  @media (max-width: 1503px) {
-    right: 70%;
-  }
-}
-.leftStyle {
-  position: absolute;
-  cursor: pointer;
-  left: 35%;
-   bottom: -11rem;
-
-  @media (max-width: 1503px) {
-    left: 5%;
-    
-  }
-  
 }

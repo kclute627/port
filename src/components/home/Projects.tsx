@@ -41,7 +41,7 @@ const Projects = ({ title, type }: any) => {
       <h2>
         {title} <span className="block"></span>
       </h2>
-      <div className="example" style={{ paddingTop: "10px" }}>
+      <div className="example">
         
           <ScrollMenu
             onWheel={onWheel}

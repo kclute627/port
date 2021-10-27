@@ -28,7 +28,7 @@ function Arrow({
         className="rightStyle btn"
         style={rightStyle}
       >
-        <BsChevronDoubleRight size={100} color="white" />
+        <BsChevronDoubleRight  color="white" />
       </button>
     );
   } else {
@@ -39,7 +39,7 @@ function Arrow({
         className="leftStyle btn"
         style={leftStyle}
       >
-        <BsChevronDoubleLeft size={100} color="white" />
+        <BsChevronDoubleLeft  color="white" />
       </button>
     );
   }
